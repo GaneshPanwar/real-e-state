@@ -55,8 +55,8 @@ body {
   }
 
   .carousel-button {
-    display: flex;
-    justify-content: center;
+    visibility: hidden;
+    display: none;
   }
 }
 
@@ -70,6 +70,17 @@ body {
     display: flex;
     width: 100%;
     padding: 1.25rem 1.25rem 3.125rem;
+  }
+
+  .carousel-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .carousel-button button {
+    background-color: #040F2E;
   }
 }
 
@@ -262,7 +273,6 @@ a,
   right: 7px;
 }
 
-
 #scrollUp,
 #back-top {
   background: #FEC82F;
@@ -287,16 +297,4 @@ footer {
 
 footer a {
   text-decoration: none;
-}
-
-.carousel-button {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-.carousel-button button {
-  color: #040F2E;
-  background-color: #040F2E;
 }
