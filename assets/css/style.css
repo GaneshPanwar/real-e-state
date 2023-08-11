@@ -54,7 +54,7 @@ body {
 
   .visit-tailor-area .tailor-details {
     display: flex;
-    width: 100%;
+    width: 80%;
     padding: 1.25rem 1.25rem 3.125rem;
   }
 }
@@ -62,7 +62,7 @@ body {
 
 .visit-tailor-area .tailor-details {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 1.25rem 1.25rem 3.125rem;
 }
 
@@ -79,7 +79,7 @@ body {
 .visit-tailor-area .tailor-details input {
   background: none;
   padding: 0px;
-  width: 100%;
+  width: 80%;
   height: 37px;
   border: 0;
   border-bottom: 2px solid #BECCD6;
