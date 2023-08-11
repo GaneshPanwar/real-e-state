@@ -55,7 +55,8 @@ body {
   }
 
   .carousel-button {
-    display: none;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -174,7 +175,6 @@ body {
 
 a,
 .button {
-
   -webkit-transition: all .3s ease-out 0s;
   -moz-transition: all .3s ease-out 0s;
   -ms-transition: all .3s ease-out 0s;
@@ -287,4 +287,16 @@ footer {
 
 footer a {
   text-decoration: none;
+}
+
+.carousel-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.carousel-button button {
+  color: #040F2E;
+  background-color: #040F2E;
 }
