@@ -26,6 +26,8 @@ body {
   background-color: #fff;
 }
 
+/* Large Screen Configuration */
+
 @media (min-width:1024px) {
   .carousel-inner {
     display: flex;
@@ -36,7 +38,14 @@ body {
     margin-right: 0;
     flex: 0 0 calc(100%/3.1);
   }
+
+  .carousel-button {
+    visibility: hidden;
+    display: none;
+  }
 }
+
+/* Medium Screen Configuration */
 
 @media screen and (min-width:576px) and (max-width:1024px) {
   .carousel-item {
@@ -44,17 +53,21 @@ body {
     margin-right: 0;
     flex: 0 0 calc(100%/2.1);
   }
+
+  .carousel-button {
+    display: none;
+  }
 }
 
 .card {
   margin: 0.2rem;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 1199px) {
+@media screen and (max-width: 576px) {
 
   .visit-tailor-area .tailor-details {
     display: flex;
-    width: 80%;
+    width: 100%;
     padding: 1.25rem 1.25rem 3.125rem;
   }
 }
@@ -79,7 +92,7 @@ body {
 .visit-tailor-area .tailor-details input {
   background: none;
   padding: 0px;
-  width: 80%;
+  width: 100%;
   height: 37px;
   border: 0;
   border-bottom: 2px solid #BECCD6;
