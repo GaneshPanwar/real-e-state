@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html>
 <!-- Head -->
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
   <title>Real Estate</title>
   <meta name="description" content />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,16 +12,12 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <!-- /Head -->
@@ -32,7 +28,7 @@
   <header>
     <!-- Divider -->
     <div class="navigation"></div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo/logo.png" alt="Real-Estate" width="30" height="30" />
@@ -89,268 +85,150 @@
   <!-- Header End -->
 
   <!-- Main Start -->
-  <main>
-    <!-- Section 2 Start -->
-
-    <section class="latest-items section-padding">
-      <div class="container ">
-        <div class="row justify-content-center">
-          <div class="col-xxl-7 col-xl-7 ">
-            <div class="section-tittle mb-50 text-center">
-              <span>Properties</span>
-              <h2>Display Latest & Featured Properties</h2>
-              <p>
-                Get started by choosing from one of our pre-built page
-                templates to showcase your properties
-              </p>
-            </div>
+    <!-- Section 1 Start -->
+    <div class="container"> 
+      <div class="row justify-content-center">
+        <div class="col-xxl-7 col-xl-7">
+          <div class="section-title mb-50 text-center">
+            <span>Properties</span>
+            <h2>Display Latest & Featured Properties</h2>
+            <p>
+              Get started by choosing from one of our pre-built page
+              templates to showcase your properties
+            </p>
           </div>
         </div>
+      </div> 
 
+      <!-- Section 2 -->
 
-        <div id="carouselslider" class="carousel slide" data-bs-slide="true" data-bs-touch="true">
-          <div class=" carousel-inner row mb-50">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay">
 
-            <!-- Div 1 -->
-            <div class="card carousel-item active col-lg-4 col-md-6 col-sm-12 p-0 h-100">
-              <div class="card-img-top ">
-                <img src="assets/img/gallery/items1.jpg.webp" alt width="100%" width="100%" />
+                </span>
+                <div class="card-image">
+                  <img src="/assets/img/gallery/items5.jpg.webp" alt="" class="card-img">
+                </div>
               </div>
-              <div class="card-header">
-                <div class="cap-top">
-                  <span>$ 6728</span>
-                  <h5><a href="#">Appartment</a></h5>
-                  <p>
-                    Get started by choosing from one of our pre-built page
-                    templates to showcase your properties
-                  </p>
-                </div>
-                <hr>
-                <div class="pricing d-flex justify-content-between align-items-center">
-                  <div class="single">
-                    <img src="assets/img/icon/bed.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/bath.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/building.svg" alt />
-                    <span>1050 Sq Ft</span>
-                  </div>
-                </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+
+                <button class="button">View More</button>
               </div>
             </div>
-            <!-- Div 2 -->
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay">
 
-            <div class="card  carousel-item col-lg-4 col-md-6 col-sm-12 p-0 h-100">
-              <div class="card-img-top">
-                <img src="assets/img/gallery/items2.jpg.webp" alt width="100%" />
+                </span>
+                <div class="card-image">
+                  <img src="/assets/img/gallery/items1.jpg.webp" alt="" class="card-img">
+                </div>
               </div>
-              <div class="card-header">
-                <div class="cap-top">
-                  <span>$ 6728</span>
-                  <h5><a href="#">Office</a></h5>
-                  <p>
-                    Get started by choosing from one of our pre-built page
-                    templates to showcase your properties
-                  </p>
-                </div>
-                <hr>
-                <div class="pricing d-flex justify-content-between align-items-center">
-                  <div class="single">
-                    <img src="assets/img/icon/bed.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/bath.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/building.svg" alt />
-                    <span>1050 Sq Ft</span>
-                  </div>
-                </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+
+                <button class="button">View More</button>
               </div>
             </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay">
 
-
-            <!-- Div 3 -->
-
-            <div class="card carousel-item col-lg-4 col-md-6 col-sm-12 p-0 h-100">
-              <div class="card-img-top">
-                <img src="assets/img/gallery/items1.jpg.webp" alt width="100%" />
+                </span>
+                <div class="card-image">
+                  <img src="/assets/img/gallery/items2.jpg.webp" alt="" class="card-img">
+                </div>
               </div>
-              <div class="card-header">
-                <div class="cap-top">
-                  <span>$ 6728</span>
-                  <h5><a href="#">Classic home</a></h5>
-                  <p>
-                    Get started by choosing from one of our pre-built page
-                    templates to showcase your properties
-                  </p>
-                </div>
-                <hr>
-                <div class="pricing d-flex justify-content-between align-items-center">
-                  <div class="single">
-                    <img src="assets/img/icon/bed.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/bath.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/building.svg" alt />
-                    <span>1050 Sq Ft</span>
-                  </div>
-                </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+
+                <button class="button">View More</button>
               </div>
             </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay">
 
-            <!-- Div 4 -->
-
-            <div class="card carousel-item col-lg-4 col-md-6 col-sm-12 p-0 h-100">
-              <div class="card-img-top">
-                <img src="assets/img/gallery/items2.jpg.webp" alt width="100%" />
+                </span>
+                <div class="card-image">
+                  <img src="/assets/img/gallery/items6.jpg.webp" alt="" class="card-img">
+                </div>
               </div>
-              <div class="card-header">
-                <div class="cap-top">
-                  <span>$ 6728</span>
-                  <h5><a href="#">Appartment</a></h5>
-                  <p>
-                    Get started by choosing from one of our pre-built page
-                    templates to showcase your properties
-                  </p>
-                </div>
-                <hr>
-                <div class="pricing d-flex justify-content-between align-items-center">
-                  <div class="single">
-                    <img src="assets/img/icon/bed.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/bath.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/building.svg" alt />
-                    <span>1050 Sq Ft</span>
-                  </div>
-                </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+
+                <button class="button">View More</button>
               </div>
             </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay">
 
-            <!-- Div 5 -->
-            <div class="card carousel-item col-lg-4 col-md-6 col-sm-12 p-0 h-100">
-              <div class="card-img-top">
-                <img src="assets/img/gallery/items2.jpg.webp" alt width="100%" />
+                </span>
+                <div class="card-image">
+                  <img src="/assets/img/gallery/items4.jpg.webp" alt="" class="card-img">
+                </div>
               </div>
-              <div class="card-header">
-                <div class="cap-top">
-                  <span>$ 6728</span>
-                  <h5><a href="#">Office</a></h5>
-                  <p>
-                    Get started by choosing from one of our pre-built page
-                    templates to showcase your properties
-                  </p>
-                </div>
-                <hr>
-                <div class="pricing d-flex justify-content-between align-items-center">
-                  <div class="single">
-                    <img src="assets/img/icon/bed.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/bath.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/building.svg" alt />
-                    <span>1050 Sq Ft</span>
-                  </div>
-                </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+
+                <button class="button">View More</button>
               </div>
             </div>
+          </div>
 
-            <!-- Div 6 -->
-            <div class="card carousel-item col-lg-4 col-md-6 col-sm-12 p-0 h-100">
-              <div class="card-img-top">
-                <img src="assets/img/gallery/items1.jpg.webp" alt width="100%" />
-              </div>
-              <div class="card-header">
-                <div class="cap-top">
-                  <span>$ 6728</span>
-                  <h5><a href="#">Classic Home</a></h5>
-                  <p>
-                    Get started by choosing from one of our pre-built page
-                    templates to showcase your properties
-                  </p>
-                </div>
-                <hr>
-                <div class="pricing d-flex justify-content-between align-items-center">
-                  <div class="single">
-                    <img src="assets/img/icon/bed.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/bath.svg" alt />
-                    <span>2 Bedroom</span>
-                  </div>
-                  <div class="single">
-                    <img src="assets/img/icon/building.svg" alt />
-                    <span>1050 Sq Ft</span>
-                  </div>
-                </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+
+      <!-- Section 3 Start -->
+      <section class="our-services2 section-padding">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="browse-monre text-center mt-50">
+                <a href="#" class="btn">Browse Propertise</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Scroll Buttons -->
-      <div class="carousel-button">
-        <button class="carousel-control-prev-icon" type="button" data-bs-target="#carouselslider" data-bs-slide="prev">
-        </button>
-        <button class="carousel-control-next-icon" type="button" data-bs-target="#carouselslider" data-bs-slide="next">
-        </button>
-      </div>
-    </section>
-
-    <!-- Section 2 End Latest Items -->
+      </section>
+      <!-- Section 3 End Over -->
 
 
-    <!-- Section 3 Start -->
-    <section class="our-services2 section-padding">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="browse-monre text-center mt-50">
-              <a href="#" class="btn">Browse Propertise</a>
-            </div>
+      <div class="visit-tailor-area fix">
+        <div class="tailor-details">
+          <h2>Subscribe Newsletter</h2>
+          <p>
+            Get started by choosing from one of our pre-built page templates to
+            showcase your properties
+          </p>
+          <div class="subscribe-now">
+            <input type="text" placeholder="Enter your email" />
+            <br>
+            <button class="submit-btn2">Subscribe</button>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Section 3 End Over -->
-
-
-    <div class="visit-tailor-area fix">
-      <div class="tailor-details">
-        <h2>Subscribe Newsletter</h2>
-        <p>
-          Get started by choosing from one of our pre-built page templates to
-          showcase your properties
-        </p>
-        <div class="subscribe-now">
-          <input type="text" placeholder="Enter your email" />
-          <br>
-          <button class="submit-btn2">Subscribe</button>
-        </div>
-      </div>
-    </div>
-  </main>
   <!-- Main End -->
 
   <!-- Footer Start -->
@@ -375,7 +253,7 @@
       </div>
     </div>
     </div>
-  </footer>
+  </footer> 
 
   <!-- Footer End -->
 
@@ -387,6 +265,19 @@
       </div>
     </a>
   </div>
+
 </body>
+
+<!-- Swiper JS -->
+<script src="assets/js/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="assets/js/script.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
 </html>
